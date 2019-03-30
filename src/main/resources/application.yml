@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 1234abcd
+    url: jdbc:mysql://127.0.0.1:3306/finicial?userSSL=false&serverTimezone=Australia/Sydney
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate.ddl-auto: update
+    #database-platform: org.hibernate.dialect.MySQLDialect
+  #jackson:
+    #default-property-inclusion:
+
+server:
+  servlet:
+    context-path: /manager
+  port: 8080
+
+
