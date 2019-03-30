@@ -8,6 +8,9 @@ spring:
     show-sql: true
     database: mysql
     hibernate.ddl-auto: update
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Australia/Sydney
     #database-platform: org.hibernate.dialect.MySQLDialect
   #jackson:
     #default-property-inclusion:
@@ -16,5 +19,7 @@ server:
   servlet:
     context-path: /manager
   port: 8080
+
+
 
 
